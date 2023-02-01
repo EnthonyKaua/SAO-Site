@@ -1,11 +1,11 @@
 @font-face{
 
     font-family: 'SAOFont';
-    src: url('fonte/SAOWelcome-Regular.otf') format('opentype'), url('fonte/SAOWelcomeTT-Regular.ttf') format('truetype');
+    src: url('../fonte/SAOWelcome-Regular.otf') format('opentype'), url('../fonte/SAOWelcomeTT-Regular.ttf') format('truetype');
 
 }
 
-*{
+p, a, li, button{
 
     font-family: 'SAOFont';
 
@@ -18,47 +18,32 @@ img{
 
 }
 
+button{
+
+    user-select: none;
+
+}
+
 .modal{
 
-    display: none;
-
-}
-
-.X{
-
-    background-color: rgb(49, 206, 206);
-    display: block;
-    position: absolute;
-    top: 18vh;
-    right: 25vw;
-    height: 30px;
-    width: 30px;
-    border: none;
-    border-radius: 60%;
-    color: white;
-    font-weight: bold;
-    font-size: 15px;
-    cursor: pointer;
-    text-transform: uppercase;
-    transition: 0.2s all ease-in-out;
-
-}
-
-.X:hover{
-
-    transform: scale(1.1);
-
-}
-
-.modal.aberto{
-
     display: flex;
+    visibility: hidden;
     position: absolute;
     align-items: center;
     justify-content: center;
     width: 100vw;
     height: 100vh;
     background-color: rgba(0, 0, 0, 0.959);
+    z-index: 1;
+    
+}
+
+.modal.aberto{
+
+    display: flex;
+    visibility: visible;
+    background-color: rgba(0, 0, 0, 0.788);
+    animation: abrirModal 0.4s ease-in;
 
 }
 
@@ -103,6 +88,7 @@ img{
     padding: 10px 20px;
     transition: 0.3s;
     letter-spacing: 2px;
+    user-select: none;
 
 }
 
@@ -117,7 +103,7 @@ img{
 
     display: flex;
     align-items: center;
-    height: calc(100vh-156.956px);
+    height: calc(100vh-116.956px);
     max-width: 1440px;
     margin: 0 auto;
     margin-left: 4%;
@@ -128,6 +114,7 @@ img{
 
     width: 700px;
     padding-bottom: 2%;
+    animation: levitar 1.5s;
 
 }
 
@@ -138,6 +125,18 @@ img{
     line-height: 150%;
     padding-bottom: 20px;
     letter-spacing: 0.5px;
+
+}
+
+#Sinopse::selection{
+
+    background-color: rgba(49, 206, 206, 0.123);
+
+}
+
+.divdoBotao{
+
+    height: 32px;
 
 }
 
@@ -152,7 +151,7 @@ img{
     cursor: pointer;
     text-transform: uppercase;
     letter-spacing: 2px;
-    transition: 0.s all ease-in-out;
+    transition: 0.2s all ease-in-out;
     display: flex;
     align-items: center;
 
@@ -161,6 +160,74 @@ img{
 .container .botao:hover{
 
     transform: scale(1.1);
+    
+
+}
+
+#SAOOrdinalScale{
+
+    z-index: -1;
+    animation: levitar 1.5s infinite alternate;
+
+}
+
+/* Animação modal*/
+@keyframes abrirModal{
+    
+    0%{
+
+        opacity: 0;
+
+    }
+
+    100%{
+
+        opacity: 1;
+
+    }
+
+}
+
+@keyframes fecharModal{
+    
+    0%{
+
+        opacity: 1;
+
+    }
+
+    100%{
+
+        opacity: 0;
+
+    }
+
+}
+
+/* Animação imagens*/
+
+@keyframes levitar{
+    
+    0%{
+
+        transform: translateY(-25px);
+
+    }
+
+
+    100%{
+
+        transform: translateY(1px);
+
+    }
+
+}
+
+#player{
+
+    display: flex;
+    z-index: -5;
+    user-select: none;
 
 }
 
@@ -185,6 +252,7 @@ img{
 .fundo-video .video{
 
     height: 100vh;
+    width: 100%;
 
 }
 

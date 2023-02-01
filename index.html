@@ -10,6 +10,7 @@
     <link rel="shortcut icon" href="imagens/neverGear - favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/reset.css" type="text/css">
     <link rel="stylesheet" href="css/style.css" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     <title>Sword Art Online The Movie - Ordinal Scale</title>
 
 </head>
@@ -31,15 +32,13 @@
 
     <div class = "modal">
 
-        <button class = "X">X</button>
-
-        <div id = "player"></div>
+        <div id = "player"></div> <!-- iframe API Youtube -->
 
     </div>
     
     <header class="cabecalho">
 
-        <a href="https://enthonykaua.github.io/SAO-Site">
+        <a href="index.html">
 
             <img class="logo" src="imagens/SAO - logo.png" alt="Logo SAO">
 
@@ -49,7 +48,7 @@
 
             <ul class="menu">
 
-                <li><a href="https://enthonykaua.github.io/SAO-Site">Home</a></li>
+                <li><a href="index.html">Home</a></li>
                 <li><a href="">Detalhes</a></li>
 
             </ul>
@@ -65,8 +64,8 @@
             <img id="SAOOrdinalScaleWord" src="imagens/SAO Ordinal Scale.png" alt="SAO Ordinal Scale">
             
             <p id="Sinopse">Em um futuro próximo, uma batalha de máquinas altamente desenvolvidas está se delineando. O ano é 2026 e Augma, um novo dispositivo, acaba de ser criado para competir com o NerveGear e o Amusphere, seu sucessor. Usando uma espécie de realidade aumentada, a tecnologia logo vira febre pelo curioso jogo Ordinal Scale, o mais popular do sistema. O jovem Kirito, que logo se interessa e começa a jogá-lo, mas logo vai perceber que o jogo não é feito só de diversão.</p>
-
-            <button class = "botao">Veja o trailer</button>
+            
+            <div class = divdoBotao><button class = "botao" id = "botaoTrailer">Veja o trailer</button></div>
 
         </div>
 
@@ -74,7 +73,7 @@
         
     </main>
 
-    <script src="JS/modal.js"></script>
+    <script src="../src/JS/modal.js"></script>
 
 </body>
 

@@ -1,3 +1,7 @@
+//Esconder botão e modal temporariamente
+$("#botaoTrailer").hide().delay(3000).fadeIn("slow")
+$(".modal").hide().delay(3000).fadeIn("slow")
+
 //Modal
 const modal = document.querySelector(".modal")
 
@@ -30,7 +34,7 @@ function onYouTubeIframeAPIReady() {
 
 function onPlayerReady(event) {
 
-  event.target.playVideo();
+  event.target.pauseVideo();
 
 }
 
@@ -57,18 +61,11 @@ const botaoTrailer = document.querySelector(".botao")
 botaoTrailer.addEventListener("click", () => {
 
   modal.classList.add("aberto")
-
-  if(player.paused()){
-        
-    player.playVideo()
-    
-  }
     
 })
 
 //Fechar modal
-const botaoFechar = document.querySelector(".X")
-botaoFechar.addEventListener("click", () => {
+modal.addEventListener("click", () => {
 
   modal.classList.remove("aberto")
   player.pauseVideo()
@@ -76,10 +73,3 @@ botaoFechar.addEventListener("click", () => {
 })
 
 //Sumir com a sugestão de vídeos Youtube
-function sumirSugestao(){
-
-  document.getElementsByClassName("ytp-pause-overlay-container").remove
-
-}
-
-sumirSugestao()
