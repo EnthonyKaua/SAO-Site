@@ -77,12 +77,12 @@ button{
 
 .cabecalho nav li a{
 
-    font-size: 25px;
+    font-size: 18px;
     font-weight: bold;
     color: white;
     padding: 10px 20px;
     transition: 0.3s;
-    letter-spacing: 2px;
+    letter-spacing: 4px;
     user-select: none;
 
 }
@@ -115,7 +115,7 @@ button{
 
 #Sinopse{
 
-    font-size: 22px;
+    font-size: 18px;
     text-align: justify;
     line-height: 150%;
     padding-bottom: 20px;
@@ -143,11 +143,11 @@ button{
     border: none;
     color: white;
     font-weight: bold;
-    font-size: 18px;
+    font-size: 14px;
     padding: 10px;
     cursor: pointer;
     text-transform: uppercase;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
     transition: 0.2s all ease-in-out;
     animation: arrastarED 1.5s;
 
