@@ -1,7 +1,7 @@
 @font-face{
 
     font-family: 'SAOFont';
-    src: url('fonte/SAOWelcome-Regular.otf') format('opentype'), url('fonte/SAOWelcomeTT-Regular.ttf') format('truetype');
+    src: url('fonte/SAOWelcome-Regular.otf');
 
 }
 
