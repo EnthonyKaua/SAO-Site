@@ -299,7 +299,8 @@ footer{
 
     position: absolute;
     right: 0;
-    width: 202px;
+    width: 277px;
+    font-size: 15px;
     margin-right: 2vw;
     letter-spacing: 1px;
     box-shadow: 0px -1px 40px rgba(49, 206, 206, 0.527);
