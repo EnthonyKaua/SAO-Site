@@ -289,12 +289,22 @@ button{
 
 }
 
+footer{
+
+    width: 100vw;
+
+}
+
 .autoria{
 
     position: absolute;
-    justify-content: center;
-    margin-right: 1vw;
     right: 0;
+    width: 202px;
+    margin-right: 2vw;
+    letter-spacing: 1px;
+    box-shadow: 0px -1px 40px rgba(49, 206, 206, 0.527);
+    background-color: rgba(53, 151, 151, 0.219);
     color: white;
+    user-select: none;
 
 }
