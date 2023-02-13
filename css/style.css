@@ -100,7 +100,7 @@ button{
 
     display: flex;
     align-items: center;
-    height: calc(100vh-117.953px);
+    height: calc(100vh - 153px);
     max-width: 1440px;
     margin: 0 auto;
     margin-left: 4%;
